@@ -1,0 +1,28 @@
+{
+  "name": "terminal_pong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --raw \"npm:watch-*\"",
+    "build": "tsc",
+    "start": "node dist/client/src/index.js",
+    "watch-tsc": "tsc -w --preserveWatchOutput",
+    "watch-run": "nodemon -d 100ms dist/client/src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/blessed": "^0.1.10",
+    "@types/socket.io-client": "^1.4.32",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.9",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "rxjs": "^6.3.3",
+    "socket.io-client": "^2.2.0"
+  }
+}
